@@ -1,0 +1,22 @@
+meta {
+  name: Get hotel inventory and rates calendar data
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/hotelcalendar/?hotelId={{hotelId}}&fromDate=20-02-2026&toDate=22-02-2026
+  body: none
+  auth: inherit
+}
+
+params:query {
+  hotelId: {{hotelId}}
+  fromDate: 20-02-2026
+  toDate: 22-02-2026
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

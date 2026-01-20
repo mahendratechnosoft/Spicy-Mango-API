@@ -1,0 +1,24 @@
+meta {
+  name: Get all group locations
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/grouplocations?groupId={{groupId}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  groupId: {{groupId}}
+}
+
+headers {
+  X-SF-API-KEY: {{stay_flexy_api_key}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

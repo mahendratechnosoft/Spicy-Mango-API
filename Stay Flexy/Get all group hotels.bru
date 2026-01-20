@@ -1,0 +1,20 @@
+meta {
+  name: Get all group hotels
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/grouphotels?groupId={{groupId}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  groupId: {{groupId}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

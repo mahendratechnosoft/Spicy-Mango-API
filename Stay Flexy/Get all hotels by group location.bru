@@ -1,0 +1,21 @@
+meta {
+  name: Get all hotels by group location
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/grouphotelsbylocation?groupId={{groupId}}&location=bangalore division, karnataka
+  body: none
+  auth: inherit
+}
+
+params:query {
+  groupId: {{groupId}}
+  location: bangalore division, karnataka
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

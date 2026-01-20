@@ -1,0 +1,63 @@
+meta {
+  name: Create booking for a given hote
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/perform-booking
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "checkin": "20-02-2026 14:00:00",
+    "checkout": "21-02-2026 11:00:00",
+    "hotelId": 30758,
+    "bookingStatus": "CONFIRMED",
+    "bookingSource": "STAYFLEXI_OD",
+    "roomStays": [
+      {
+        "numAdults": 1,
+        "numChildren": 0,
+        "numChildren1": 0,
+        "roomTypeId": "12353",
+        "ratePlanId": "REPLACE_WITH_ID_FROM_AVAILABILITY_API"
+      }
+    ],
+    "ctald": "",
+    "customerDetails": {
+      "firstName": "TestPayNow",
+      "lastName": "Booking",
+      "emailId": "testpaynow.booking@gmail.com",
+      "phoneNumber": "+919999999999",
+      "country": "India",
+      "city": "Pune",
+      "zipcode": "411001",
+      "address": "Test Address",
+      "state": "Maharashtra"
+    },
+    "paymentDetails": {
+      "sellRate": 1120,
+      "roomRate": 1120,
+      "payAtHotel": false
+    },
+    "promoInfo": {},
+    "specialRequests": "",
+    "requestToBook": false,
+    "isAddOnPresent": false,
+    "posorderList": [],
+    "isInsured": false,
+    "refundableBookingFee": 0,
+    "appliedPromocode": "",
+    "promoAmount": 0,
+    "bookingFees": 0,
+    "isEnquiry": true
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

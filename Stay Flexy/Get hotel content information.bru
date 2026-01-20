@@ -1,0 +1,20 @@
+meta {
+  name: Get hotel content information
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/hotelcontent?hotelId={{hotelId}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  hotelId: {{hotelId}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

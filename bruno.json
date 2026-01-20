@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "name": "Spicy_Mango",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "size": 0.0005779266357421875,
+  "filesCount": 3,
+  "presets": {
+    "requestType": "http",
+    "requestUrl": "{{baseUrl}}/"
+  }
+}

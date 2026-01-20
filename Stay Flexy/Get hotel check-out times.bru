@@ -1,0 +1,21 @@
+meta {
+  name: Get hotel check-out times
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/hotelcheckout/?hotelId={{hotelId}}&date=20-02-2026
+  body: none
+  auth: inherit
+}
+
+params:query {
+  hotelId: {{hotelId}}
+  date: 20-02-2026
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

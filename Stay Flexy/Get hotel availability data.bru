@@ -1,0 +1,23 @@
+meta {
+  name: Get hotel availability data
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/hoteldetailadvanced?hotelId={{hotelId}}&checkin=20-03-2026 00:00:00&checkout=21-03-2026 00:00:00&discount=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  hotelId: {{hotelId}}
+  checkin: 20-03-2026 00:00:00
+  checkout: 21-03-2026 00:00:00
+  discount: 0
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
