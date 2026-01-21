@@ -1,0 +1,36 @@
+meta {
+  name: Record payment entry and confirmation for a booking Id
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{stay_flexy_baseUrl2}}/recordExternalPayment/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "hotel_id": 30758,
+    "booking_id": "SFBOOKING_30758_12384",
+    "booking_source": "CUSTOM_BE",
+    "module_source": "CUSTOM_BE_PAYMENT",
+    "amount": 2000,
+    "currency": "INR",
+    "pg_name": "RAZORPAY",
+    "payment_gateway_id": "test_payment_id_12345",
+    "requires_post_payment_confirmation": "true",
+    "notes": "Testing Payment API Confirmation",
+    "gateway_message": "Success",
+    "payment_type": "Credit card",
+    "payment_issuer": "VISA",
+    "payment_mode": "CREDIT CARD",
+    "status": "SUCCESS"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

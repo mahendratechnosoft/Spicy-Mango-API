@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{baseUrl}}/perform-booking
+  url: {{stay_flexy_baseUrl}}/perform-booking
   body: json
   auth: inherit
 }
@@ -15,22 +15,22 @@ body:json {
     "checkin": "20-02-2026 14:00:00",
     "checkout": "21-02-2026 11:00:00",
     "hotelId": 30758,
-    "bookingStatus": "CONFIRMED",
+    "bookingStatus": "CONFIRMED", // Keep this as CONFIRMED, the 'isEnquiry' flag overrides it
     "bookingSource": "STAYFLEXI_OD",
     "roomStays": [
       {
         "numAdults": 1,
         "numChildren": 0,
         "numChildren1": 0,
-        "roomTypeId": "12353",
-        "ratePlanId": "REPLACE_WITH_ID_FROM_AVAILABILITY_API"
+        "roomTypeId": "12353", // Deluxe Room
+        "ratePlanId": "38300"  // Standard Plan
       }
     ],
     "ctald": "",
     "customerDetails": {
       "firstName": "TestPayNow",
-      "lastName": "Booking",
-      "emailId": "testpaynow.booking@gmail.com",
+      "lastName": "User",
+      "emailId": "testpaynow@example.com",
       "phoneNumber": "+919999999999",
       "country": "India",
       "city": "Pune",
@@ -39,12 +39,12 @@ body:json {
       "state": "Maharashtra"
     },
     "paymentDetails": {
-      "sellRate": 1120,
-      "roomRate": 1120,
-      "payAtHotel": false
+      "sellRate": 2000,
+      "roomRate": 2000,
+      "payAtHotel": false // IMPORTANT: Must be false
     },
     "promoInfo": {},
-    "specialRequests": "",
+    "specialRequests": "Testing Pay Now Flow",
     "requestToBook": false,
     "isAddOnPresent": false,
     "posorderList": [],
@@ -53,7 +53,7 @@ body:json {
     "appliedPromocode": "",
     "promoAmount": 0,
     "bookingFees": 0,
-    "isEnquiry": true
+    "isEnquiry": true // IMPORTANT: This makes it a temporary hold (30 mins)
   }
 }
 

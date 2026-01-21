@@ -1,0 +1,25 @@
+meta {
+  name: {{baseUrl}}/auth/register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/auth/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email":"admin@gmail.com",
+    "password":"1234",
+    "firstName":"test",
+    "lastName":"admin"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
