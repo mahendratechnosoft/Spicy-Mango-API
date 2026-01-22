@@ -1,0 +1,28 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllEnquiry
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllEnquiry?page=0&size=10&search=Pritesh&startDate=26-01-2026&endDate=27-01-2026
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 0
+  size: 10
+  search: Pritesh
+  startDate: 26-01-2026
+  endDate: 27-01-2026
+}
+
+auth:bearer {
+  token: {{bearerToken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
