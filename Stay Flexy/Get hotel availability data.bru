@@ -5,16 +5,20 @@ meta {
 }
 
 get {
-  url: {{stay_flexy_baseUrl}}/hoteldetailadvanced?hotelId={{hotelId}}&checkin=20-03-2026 00:00:00&checkout=21-03-2026 00:00:00&discount=0
+  url: {{stay_flexy_baseUrl}}/hoteldetailadvanced?hotelId={{hotelId}}&checkin=23-01-2026 00:00:00&checkout=24-01-2026 00:00:00&discount=0
   body: none
-  auth: inherit
+  auth: none
 }
 
 params:query {
   hotelId: {{hotelId}}
-  checkin: 20-03-2026 00:00:00
-  checkout: 21-03-2026 00:00:00
+  checkin: 23-01-2026 00:00:00
+  checkout: 24-01-2026 00:00:00
   discount: 0
+}
+
+headers {
+  X-SF-API-KEY: {{stay_flexy_api_key}}
 }
 
 settings {

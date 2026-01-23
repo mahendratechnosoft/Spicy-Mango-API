@@ -1,0 +1,36 @@
+meta {
+  name: {{baseUrl}}/{{role}}/sendEnquiry
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/public/recordBooking
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "adminId":"a992f49e-1c6e-47e7-908f-8fd8fe6c5884",
+    "styaflexyBookingId": "SF-BOOK-9845124",
+    "checkin": "2026-02-10T14:00:00",
+    "checkout": "2026-02-13T11:00:00",
+  
+    "hotelName": "Spicy Mango Beach Resort",
+    "bookingStatus": "CONFIRMED",
+    "sellRate": 18500.00,
+    "currency": "INR",
+  
+    "customerName": "Mahesh Thete",
+    "customerEmail": "mahesh@example.com",
+    "customerPhone": "9876543210",
+    "customerCountry": "India"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

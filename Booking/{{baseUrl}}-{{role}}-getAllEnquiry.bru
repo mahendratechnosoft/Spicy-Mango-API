@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllEnquiry?page=0&size=10&search=Pritesh&startDate=26-01-2026&endDate=27-01-2026
+  url: {{baseUrl}}/{{role}}/getAllBooking?page=0&size=10&search=ritesh
   body: none
   auth: bearer
 }
@@ -13,9 +13,7 @@ get {
 params:query {
   page: 0
   size: 10
-  search: Pritesh
-  startDate: 26-01-2026
-  endDate: 27-01-2026
+  search: ritesh
 }
 
 auth:bearer {
