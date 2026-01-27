@@ -1,0 +1,16 @@
+meta {
+  name: Imageupload
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/images/upload
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
