@@ -1,0 +1,27 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addPropertyImages/{propertyId}
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/addPropertyImages/30758
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    "http://localhost:8080/images/c1453155-a918-4b9f-9ea8-a1e40994e5c8_donorDemoFull.jpg",
+    
+    "http://localhost:8080/images/d6f6e88b-486d-437a-884c-9b81fbc883e3_Marca_HP.jpg",
+    
+    "http://localhost:8080/images/d6f6e88b-486d-437a-884c-9b81fbc883e3_Marca_HP.jpg"
+  ]
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
