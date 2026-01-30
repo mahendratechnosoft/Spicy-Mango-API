@@ -1,0 +1,31 @@
+meta {
+  name: {{baseUrl}}/public/becomePartner
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/public/becomePartner
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName": "Ritesh",
+    "lastName": "Thete",
+    "email": "ritesh.thete@example.com",
+    "phoneNumber": "9876543210",
+    "location": "Pune",
+    "propertyType": "Hotel",
+    "numberOfRooms": 45,
+    "message": "I am interested in becoming a partner and listing my hotel on Spicy Mango. Please contact me with further details.",
+    "updates": true
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

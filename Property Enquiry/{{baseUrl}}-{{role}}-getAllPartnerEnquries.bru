@@ -1,0 +1,27 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllPartnerEnquries
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllPartnerEnquries?search=x&page=0&size=10&sort=firstName,desc
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: x
+  page: 0
+  size: 10
+  sort: firstName,desc
+}
+
+auth:bearer {
+  token: {{bearerToken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
