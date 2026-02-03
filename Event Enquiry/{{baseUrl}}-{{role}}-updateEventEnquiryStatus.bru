@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateEventEnquiryStatus
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateEventEnquiryStatus?eventEnquiryId=45d2a93a-fdb6-466f-8397-436ad61c3727&status=INTERESTED
+  body: none
+  auth: inherit
+}
+
+params:query {
+  eventEnquiryId: 45d2a93a-fdb6-466f-8397-436ad61c3727
+  status: INTERESTED
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

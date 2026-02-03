@@ -1,0 +1,35 @@
+meta {
+  name: {{baseUrl}}/public/eventEnquiry
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/public/eventEnquiry
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "adminId": "a992f49e-1c6e-47e7-908f-8fd8fe6c5884",
+    "firstName": "Jay",
+    "lastName": "Labhade",
+    "email": "jay@example.com",
+    "phoneNumber": "9876543210",
+    "numberOfGuests": 120,
+    "location": "Goa Beach Resort",
+    "whatToCelebrate": "Wedding Anniversary",
+    "checkIn": "2026-02-10",
+    "checkOut": "2026-02-13",
+    "payLimit": "150000",
+    "message": "We are looking for a beach side resort with decoration and catering.",
+    "status": "NEW"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

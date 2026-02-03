@@ -1,0 +1,16 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllContactUs
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllContactUs
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updatePartnerEnquiry
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updatePartnerEnquiry?partnerEnquiryId=7a278b63-b523-461f-8965-2e888b37ae81&status=CONTACTED
+  body: none
+  auth: inherit
+}
+
+params:query {
+  partnerEnquiryId: 7a278b63-b523-461f-8965-2e888b37ae81
+  status: CONTACTED
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

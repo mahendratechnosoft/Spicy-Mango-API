@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllEventEnquiry
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllEventEnquiry?page=0&size=10&sort=firstName,desc&search=mahesh
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 0
+  size: 10
+  sort: firstName,desc
+  search: mahesh
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

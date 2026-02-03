@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateContactUsStatus
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateContactUsStatus?contactUsId=4edc7987-3816-4821-9969-c6b8b60fa7b1&status="CONTACTED"
+  body: none
+  auth: inherit
+}
+
+params:query {
+  contactUsId: 4edc7987-3816-4821-9969-c6b8b60fa7b1
+  status: "CONTACTED"
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
