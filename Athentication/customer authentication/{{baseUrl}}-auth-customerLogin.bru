@@ -1,0 +1,44 @@
+meta {
+  name: {{baseUrl}}/auth/customerLogin
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/auth/customerLogin
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mobileNumber":"9067467472",
+    "otp":"702639"
+  }
+}
+
+script:post-response {
+  // 1. Parse the response body as JSON
+  var jsonData = res.getBody();
+  
+  // 2. Get the token from the JSON data
+  var token = jsonData.token; 
+  var roleResponce = jsonData.role;
+  var role = "";
+  
+  if(roleResponce === "ROLE_ADMIN"){
+      role = "admin";
+  } else if (roleResponce === "ROLE_ CUSTOMER") {
+      role = "customer";
+  }
+  
+  bru.setEnvVar("bearerToken", token);
+  bru.setEnvVar("role", role);
+  console.log("Token set to: " + bru.getEnvVar("bearerToken"));
+  console.log("Role set to: " + bru.getEnvVar("role"));
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

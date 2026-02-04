@@ -5,11 +5,53 @@ meta {
 }
 
 post {
-  url: https://api.ycloud.com/v2/whatsapp/messages/template
-  body: none
+  url: https://api.ycloud.com/v2/whatsapp/messages/sendDirectly
+  body: json
   auth: inherit
+}
+
+headers {
+  X-API-Key: 66ab19a2602a0a358ad46eb88f0e0e22
+}
+
+body:json {
+  {
+    "type": "template",
+    "from": "919867674164",
+    "to": "919067467472",
+    "template": {
+      "name": "template_authentication_20260203150517",
+      "language": {
+        "code": "en"
+      },
+      "components": [
+        {
+          "type": "body",
+          "parameters": [
+            {
+              "type": "text",
+              "text": "458912"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "sub_type": "url",
+          "index": "0",
+          "parameters": [
+            {
+              "type": "text",
+              "text": "458912"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

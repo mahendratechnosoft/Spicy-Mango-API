@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/auth/requestCustomerOtp
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/auth/requestCustomerOtp?mobileNumber=9067467472
+  body: none
+  auth: none
+}
+
+params:query {
+  mobileNumber: 9067467472
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
