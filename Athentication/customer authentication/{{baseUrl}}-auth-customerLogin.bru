@@ -13,7 +13,8 @@ post {
 body:json {
   {
     "mobileNumber":"9067467472",
-    "otp":"702639"
+    "otp":"456010",
+    "adminId":"a992f49e-1c6e-47e7-908f-8fd8fe6c5884"
   }
 }
 
@@ -28,7 +29,7 @@ script:post-response {
   
   if(roleResponce === "ROLE_ADMIN"){
       role = "admin";
-  } else if (roleResponce === "ROLE_ CUSTOMER") {
+  } else if (roleResponce === "ROLE_CUSTOMER") {
       role = "customer";
   }
   

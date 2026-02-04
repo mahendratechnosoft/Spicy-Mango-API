@@ -5,14 +5,17 @@ meta {
 }
 
 post {
-  url: {{baseUrl}}/public/recordBooking
+  url: {{baseUrl}}/{{role}}/recordBooking
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{bearerToken}}
 }
 
 body:json {
   {
-    "adminId":"b30c5a78-bb56-4fed-8f13-9a6d88645d39",
     "styaflexyBookingId": "SF-BOOK-9845124",
     "checkin": "2026-02-10T14:00:00",
     "checkout": "2026-02-13T11:00:00",
