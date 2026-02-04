@@ -1,0 +1,15 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getCustomer
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getCustomer
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

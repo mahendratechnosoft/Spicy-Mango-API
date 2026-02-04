@@ -1,0 +1,32 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateCustomer
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateCustomer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "address": "nashik",
+    "anniversaryDate": "2002-04-13",
+    "dateOfBirth": "2002-04-13",
+    "description": "jaskjdfh",
+    "email": "demo@gmail.com",
+    "name": "new name ",
+    "phoneNumber": "9876543220",
+    "profileImageUrl": "iamge/url/",
+    "spouseBirthday": "2002-04-13",
+    "createdAt": "2026-02-04T15:13:30.242345",
+    "createdBy": "SYSTEM"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
