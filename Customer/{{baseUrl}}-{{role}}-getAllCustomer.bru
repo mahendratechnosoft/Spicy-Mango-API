@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllCustomer
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllCustomer?page=0&size=10&search=new name
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 0
+  size: 10
+  search: new name
+  ~sort: name
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
