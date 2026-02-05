@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllCustomer?page=0&size=10&search=new name
+  url: {{baseUrl}}/{{role}}/getAllCustomer?page=0&size=10
   body: none
   auth: inherit
 }
@@ -13,7 +13,7 @@ get {
 params:query {
   page: 0
   size: 10
-  search: new name
+  ~search: new name
   ~sort: name
 }
 
