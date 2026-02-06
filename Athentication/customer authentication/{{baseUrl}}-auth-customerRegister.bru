@@ -1,0 +1,28 @@
+meta {
+  name: {{baseUrl}}/auth/customerRegister
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/auth/customerRegister
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "mobileNumber": "9067467472",
+    "otp": "123456",
+    "firstName": "Ritesh",
+    "lastName": "Thete",
+    "email": "ritesh@example.com",
+    "adminId": "98973012-c27b-4fda-9423-a0266a80051c"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
