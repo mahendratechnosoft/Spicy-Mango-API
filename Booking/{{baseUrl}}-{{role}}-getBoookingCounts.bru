@@ -1,0 +1,25 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getBoookingCounts
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getBoookingCounts?startDate=07-02-2026&endDate=07-02-2026
+  body: none
+  auth: bearer
+}
+
+params:query {
+  startDate: 07-02-2026
+  endDate: 07-02-2026
+}
+
+auth:bearer {
+  token: {{bearerToken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
