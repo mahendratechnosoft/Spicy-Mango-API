@@ -12,7 +12,7 @@ post {
 
 body:json {
   {
-    "mobileNumber":"1234567",
+    "mobileNumber":"7744998493",
     "otp":"955210"
   }
 }
@@ -22,8 +22,8 @@ script:post-response {
   var jsonData = res.getBody();
   
   // 2. Get the token from the JSON data
-  var token = jsonData.token; 
-  var roleResponce = jsonData.role;
+  var token = jsonData.authData.token; 
+  var roleResponce = jsonData.authData.role;
   var role = "";
   
   if(roleResponce === "ROLE_ADMIN"){
