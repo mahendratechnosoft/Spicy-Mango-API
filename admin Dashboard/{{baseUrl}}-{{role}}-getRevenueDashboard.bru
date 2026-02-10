@@ -1,0 +1,25 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getRevenueDashboard
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getRevenueDashboard
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~startDate: 07-02-2026
+  ~endDate: 07-02-2026
+}
+
+auth:bearer {
+  token: {{bearerToken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

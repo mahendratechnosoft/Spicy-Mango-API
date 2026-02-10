@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getNewCustomerTrend
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getNewCustomerTrend?page=0&size=6
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 0
+  size: 6
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
