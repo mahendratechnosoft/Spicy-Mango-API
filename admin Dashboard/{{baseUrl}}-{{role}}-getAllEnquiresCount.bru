@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllEnquiresCount
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllEnquiresCount?startDate=01-02-2025&endDate=11-02-2025
+  body: none
+  auth: inherit
+}
+
+params:query {
+  startDate: 01-02-2025
+  endDate: 11-02-2025
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

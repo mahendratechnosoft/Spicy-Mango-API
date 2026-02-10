@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getFeedbackAvgDepartment
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getFeedbackAvgDepartment
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~startDate: 01-02-2025
+  ~endDate: 10-02-2025
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
