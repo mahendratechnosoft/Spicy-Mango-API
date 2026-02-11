@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/validateCoupon
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/validateCoupon?code=BIRTHDAY21&bookingAmount=5000
+  body: none
+  auth: inherit
+}
+
+params:query {
+  code: BIRTHDAY21
+  bookingAmount: 5000
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/isCoupounCodeExist
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/isCoupounCodeExist?code=BIRTHDAY21
+  body: none
+  auth: inherit
+}
+
+params:query {
+  code: BIRTHDAY21
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,22 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllCoupons
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllCoupons?page=0&size=10
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 0
+  size: 10
+  ~sort: createdAt,asc
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

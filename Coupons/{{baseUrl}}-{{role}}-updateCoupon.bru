@@ -1,0 +1,31 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateCoupon
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateCoupon
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "couponId": "50e5dec1-faac-4f44-ba52-a5cb714c6df2",
+    "description": "New Year update special discount offer",
+    "discountType": "PERCENTAGE",
+    "discountValue": 5,
+    "maxDiscountAmount": 2000,
+    "minBookingAmount": 5000,
+    "startDate": "2026-02-10T00:00:00",
+    "endDate": null,
+    "maxUsageLimit": 100,
+    "maxUsagePerUser": null
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

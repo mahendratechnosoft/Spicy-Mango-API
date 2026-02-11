@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/changeCouponStatus
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/changeCouponStatus?couponId=50e5dec1-faac-4f44-ba52-a5cb714c6d&isActive=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  couponId: 50e5dec1-faac-4f44-ba52-a5cb714c6d
+  isActive: false
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
