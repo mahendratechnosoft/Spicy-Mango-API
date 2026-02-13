@@ -1,0 +1,16 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getActiveCoupons
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getActiveCoupons
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

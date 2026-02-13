@@ -1,0 +1,29 @@
+meta {
+  name: {{baseUrl}}/{{role}}/cancelBooking
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/cancelBooking?bookingId=0e800264-f6a2-40b9-b6a8-f50a547fb926&bookingStatus="CONFIRMED"
+  body: none
+  auth: bearer
+}
+
+params:query {
+  bookingId: 0e800264-f6a2-40b9-b6a8-f50a547fb926
+  bookingStatus: "CONFIRMED"
+}
+
+headers {
+  bookingId: 0e800264-f6a2-40b9-b6a8-f50a547fb926
+}
+
+auth:bearer {
+  token: {{bearerToken}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

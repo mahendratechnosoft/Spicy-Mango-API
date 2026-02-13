@@ -1,0 +1,45 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateHeroSection
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateHeroSection
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "adminId": "98973012-c27b-4fda-9423-a0266a80051c",
+    "announcementCouponCode": "FLAT10",
+    "announcementIconUrl": "http://localhost:8080/images/543c9e0a-5ae1-4b57-9237-6b2754e2ac14_stamp.png",
+    "announcementLine": "Flat 20% OFF on all Orders!",
+    "badgeOffer1CouponCode": "FREEDEL",
+    "badgeOffer1Line": "Free Delivery on Orders Above ₹999",
+    "badgeOffer2CouponCode": "B1G1",
+    "badgeOffer2Line": "Buy 1 Get 1 Free",
+    "badgeOffer3CouponCode": "LESS100",
+    "badgeOffer3Line": "Flat ₹100 OFF",
+    
+    "createdAt": "2026-02-12T13:14:01.860391",
+    "createdBy": "QA Admin Test",
+    "hederLine": "Fresh & Spicy Deals Everyday! ",
+    "hederSubLine": "Experience premium villa stays with world-class amenities and breathtaking views",
+    "heroSectionId": "29634954-e692-4a5b-86ba-c665f3d61220",
+    "isAnnouncementActive": true,
+    "isBadgeOffer1Active": true,
+    "isBadgeOffer2Active": false,
+    "isBadgeOffer3Active": false,
+    "contactNumber":"99999 65456",
+    "logoUrl": "http://localhost:8080/images/4b17534c-b819-4511-848a-fb7608b33a70_Mtech_Logo.jpg",
+    "updatedAt": "2026-02-12T13:14:01.860391",
+    "updatedBy": "QA Admin Test"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
