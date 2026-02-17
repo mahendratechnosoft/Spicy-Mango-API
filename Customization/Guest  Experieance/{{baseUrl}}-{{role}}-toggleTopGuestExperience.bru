@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/toggleTopGuestExperience
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/toggleTopGuestExperience?topGuestExperienceId=098b5d4a-c040-4243-9b0e-8f1f80218489
+  body: none
+  auth: inherit
+}
+
+params:query {
+  topGuestExperienceId: 098b5d4a-c040-4243-9b0e-8f1f80218489
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

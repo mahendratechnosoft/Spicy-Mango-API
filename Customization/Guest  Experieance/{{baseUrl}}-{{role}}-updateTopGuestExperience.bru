@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateTopGuestExperience
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateTopGuestExperience?topGuestExperienceId=f23cff82-5787-493b-8fed-2a409dc5c762&mediaUrl=http://localhost:8080/images/d98ffcc1-52dc-460f-b1f0-f4a2366db22f_Screenshot2026-02-12142352.png
+  body: none
+  auth: inherit
+}
+
+params:query {
+  topGuestExperienceId: f23cff82-5787-493b-8fed-2a409dc5c762
+  mediaUrl: http://localhost:8080/images/d98ffcc1-52dc-460f-b1f0-f4a2366db22f_Screenshot2026-02-12142352.png
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/public/getAllTopGuestExperiences
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/public/getAllTopGuestExperiences?adminId=98973012-c27b-4fda-9423-a0266a80051c
+  body: none
+  auth: inherit
+}
+
+params:query {
+  adminId: 98973012-c27b-4fda-9423-a0266a80051c
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

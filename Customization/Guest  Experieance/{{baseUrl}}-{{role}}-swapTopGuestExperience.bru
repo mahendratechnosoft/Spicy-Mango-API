@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/swapTopGuestExperience
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/swapTopGuestExperience?firstId=098b5d4a-c040-4243-9b0e-8f1f80218489&secondId=f23cff82-5787-493b-8fed-2a409dc5c762
+  body: none
+  auth: inherit
+}
+
+params:query {
+  firstId: 098b5d4a-c040-4243-9b0e-8f1f80218489
+  secondId: f23cff82-5787-493b-8fed-2a409dc5c762
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
