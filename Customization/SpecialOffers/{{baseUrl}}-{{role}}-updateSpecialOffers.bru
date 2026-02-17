@@ -1,0 +1,34 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateSpecialOffers
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateSpecialOffers
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "specialOffersId": "6b8b74a3-2272-4314-880f-e925311f5c06",
+      "couponId": "d4417c0c-4dd9-4404-bb88-7b67e70c9f71",
+      "specialOfferImgUrl": "http://localhost:8080/images/f87bebe1-a9d4-4877-8861-63742d649bc7_stamp.png",
+      "sequence": 1,
+      "isActive": true
+    },
+    {
+      "couponId": "d4417c0c-4dd9-4404-bb88-7b67e70c9f71",
+      "specialOfferImgUrl": "http://localhost:8080/images/f87bebe1-a9d4-4877-8861-63742d649bc7_stamp.png",
+      "sequence": 2,
+      "isActive": true
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

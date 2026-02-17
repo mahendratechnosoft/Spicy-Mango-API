@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/videos/upload
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/videos/upload
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  file: @file()
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
