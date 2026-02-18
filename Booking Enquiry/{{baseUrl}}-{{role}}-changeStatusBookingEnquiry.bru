@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/changeStatusBookingEnquiry
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/changeStatusBookingEnquiry?bookingEnquiryId=add04f41-f0c6-41db-ad8c-2469954b4a46&status=CONFIRMED
+  body: none
+  auth: inherit
+}
+
+params:query {
+  bookingEnquiryId: add04f41-f0c6-41db-ad8c-2469954b4a46
+  status: CONFIRMED
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

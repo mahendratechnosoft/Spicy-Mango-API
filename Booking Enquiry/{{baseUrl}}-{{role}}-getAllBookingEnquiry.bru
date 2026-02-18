@@ -1,0 +1,25 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllBookingEnquiry
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllBookingEnquiry?page=0&size=10&startDate=17-02-2026&endDate=18-02-2026
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 0
+  size: 10
+  startDate: 17-02-2026
+  endDate: 18-02-2026
+  ~status: NEW
+  ~search: ritesh
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
