@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateWhyChooseUs/{whyChooseUsId}
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateWhyChooseUs/b2c14f2a-372c-4ce9-b1e2-40b3af3a8901
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "iconUrl":"http://localhost:8080/images/60bbe338-5e99-4c38-a709-810b635e6d76_Screenshot2026-02-03174124.png",
+    "description":"demo description updated"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

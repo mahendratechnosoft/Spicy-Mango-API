@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createWhyChooseUs
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createWhyChooseUs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "iconUrl":"http://localhost:8080/images/3b504eb3-1a09-465f-9ea2-8e4606dfc190_Screenshot2026-01-08112931.png",
+    "description":"demo description 2"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

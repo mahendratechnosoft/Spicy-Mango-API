@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/swapWhyChooseUs
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/swapWhyChooseUs?firstId=b2c14f2a-372c-4ce9-b1e2-40b3af3a8901&secondId=b4eeedaf-1a90-47cc-aa6d-c4ca4844ffab
+  body: none
+  auth: inherit
+}
+
+params:query {
+  firstId: b2c14f2a-372c-4ce9-b1e2-40b3af3a8901
+  secondId: b4eeedaf-1a90-47cc-aa6d-c4ca4844ffab
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
