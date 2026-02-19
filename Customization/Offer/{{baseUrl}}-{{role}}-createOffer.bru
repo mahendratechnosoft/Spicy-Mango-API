@@ -1,0 +1,32 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createOffer
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createOffer
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "offerTitle": "Special",
+    "imageUrl": "http://localhost:8080/images/0fb00f45-1958-4e06-bead-3db0374fdcf3_Screenshot2025-11-20135148.png",
+    "price": 3499.0,
+    "currency": "INR",
+    "expiryTime": "2026-12-31T23:59:59",
+    "features": [
+      {
+        "label": "Premium Stay",
+        "description": "Spacious luxury rooms with scenic views."
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

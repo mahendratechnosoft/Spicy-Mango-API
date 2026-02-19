@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/swapOffer
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/swapOffer?firstId=07490932-a149-4384-86d2-3d396ecb648f&secondId=8d6a43c9-e9e9-4dd2-96d5-27ad28bbec51
+  body: none
+  auth: inherit
+}
+
+params:query {
+  firstId: 07490932-a149-4384-86d2-3d396ecb648f
+  secondId: 8d6a43c9-e9e9-4dd2-96d5-27ad28bbec51
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/toggleOffer
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/toggleOffer?offerId=8d6a43c9-e9e9-4dd2-96d5-27ad28bbec51
+  body: none
+  auth: inherit
+}
+
+params:query {
+  offerId: 8d6a43c9-e9e9-4dd2-96d5-27ad28bbec51
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
