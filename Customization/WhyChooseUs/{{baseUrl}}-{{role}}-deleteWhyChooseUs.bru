@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/deleteWhyChooseUs
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/{{role}}/deleteWhyChooseUs?whyChooseUsId=b4eeedaf-1a90-47cc-aa6d-c4ca4844ffab
+  body: none
+  auth: inherit
+}
+
+params:query {
+  whyChooseUsId: b4eeedaf-1a90-47cc-aa6d-c4ca4844ffab
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

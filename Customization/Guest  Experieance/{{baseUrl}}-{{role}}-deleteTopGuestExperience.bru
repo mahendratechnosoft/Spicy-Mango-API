@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/deleteTopGuestExperience
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/{{role}}/deleteTopGuestExperience?topGuestExperienceId=f23cff82-5787-493b-8fed-2a409dc5c762
+  body: none
+  auth: inherit
+}
+
+params:query {
+  topGuestExperienceId: f23cff82-5787-493b-8fed-2a409dc5c762
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
