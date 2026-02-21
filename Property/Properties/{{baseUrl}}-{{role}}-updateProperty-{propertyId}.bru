@@ -1,0 +1,43 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateProperty/{propertyId}
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateProperty/8c83d61c-7236-481c-87b2-30c2ea2b1b04
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "propertyName": "Test/Villa",
+    "propertyType": "VILLA",
+    "description": "villa",
+    "contactName": "9067467472",
+    "contactEmail": "bookings@spicymango.in",
+    "contactPhone": "+918485888313",
+    "address": "No. 2727/1, First Floor, 16th Cross, 27th Main Rd, opp. to NIFT, PWD Quarters, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India",
+    "zipCode": "560102",
+    "latitude": 12.912622,
+    "longitude": 77.653046,
+    "ratting": 5.0,
+    "termAndCondition": null,
+    "propertyCurrency": "INR",
+    "propertyBannerUrl": null,
+    "propertyGuideUrl": null,
+    "riverSide": null,
+    "exclusive": true,
+    "petFriendly": null,
+    "premium": true
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
