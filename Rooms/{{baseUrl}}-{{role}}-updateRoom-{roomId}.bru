@@ -1,0 +1,30 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateRoom/{roomId}
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateRoom/5f7e8940-a695-469f-b7a5-f2a7468d72d6
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "roomTypeName": "beach villa",
+    "roomTypeDescription": "roomm description",
+    "maxOccupants": 2,
+    "maxPossible": 3,
+    "maxChildren": 1,
+    "maxInfants": null,
+    "bannerImgUrl": null,
+    "ratting": 5.0,
+    "totalRooms": null
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

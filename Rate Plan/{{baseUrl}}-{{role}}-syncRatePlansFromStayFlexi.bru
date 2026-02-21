@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/syncRatePlansFromStayFlexi
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/syncRatePlansFromStayFlexi?propertyId=510c3430-8637-421d-9a7b-96a1b3b4b373
+  body: none
+  auth: inherit
+}
+
+params:query {
+  propertyId: 510c3430-8637-421d-9a7b-96a1b3b4b373
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
