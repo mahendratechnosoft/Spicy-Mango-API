@@ -4,12 +4,18 @@ meta {
   seq: 4
 }
 
-get {
-  url: {{baseUrl}}/{{role}}/swapRoomImagesSequence
+put {
+  url: {{baseUrl}}/{{role}}/swapRoomImagesSequence?firstId=58f2209b-4cee-4049-a2d5-7089187e0173&secondId=4a1891ac-f2e6-4155-851e-100d93ceb9ef
   body: none
   auth: inherit
 }
 
+params:query {
+  firstId: 58f2209b-4cee-4049-a2d5-7089187e0173
+  secondId: 4a1891ac-f2e6-4155-851e-100d93ceb9ef
+}
+
 settings {
   encodeUrl: true
+  timeout: 0
 }

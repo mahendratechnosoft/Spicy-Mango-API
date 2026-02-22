@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getDailyRatesForRoom
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getDailyRatesForRoom?startDate=2026-02-22&endDate=2026-02-25&stayflexiPropertyId=30257&stayflexiRoomTypeId=12357
+  body: none
+  auth: inherit
+}
+
+params:query {
+  startDate: 2026-02-22
+  endDate: 2026-02-25
+  stayflexiPropertyId: 30257
+  stayflexiRoomTypeId: 12357
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
