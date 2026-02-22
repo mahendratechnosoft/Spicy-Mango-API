@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getRoomDropdownByStayflexiPropertyId
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getRoomDropdownByStayflexiPropertyId?stayflexiPropertyId=30257
+  body: none
+  auth: inherit
+}
+
+params:query {
+  stayflexiPropertyId: 30257
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,27 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateDailyRateByDailyRateId/{dailyRateId}
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateDailyRateByDailyRateId/b5dc336d-83b1-4b9d-9ea7-52d54b2e9e90
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "adultRate1": 3300.0,
+    "adultRate2": 3300.0,
+    "adultRate3": 1200.0,
+    "adultRate4": 0.0,
+    "childRate": 0.0,
+    "infantRate": 0.0
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

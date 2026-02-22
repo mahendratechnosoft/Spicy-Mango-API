@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getRatePlanDropdown
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getRatePlanDropdown?stayflexiPropertyId=30257&stayflexiRoomTypeId=12355
+  body: none
+  auth: inherit
+}
+
+params:query {
+  stayflexiPropertyId: 30257
+  stayflexiRoomTypeId: 12355
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
