@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllPartnerEnquries
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllPartnerEnquries?page=0&size=10&search=Ritesh&sort=firstName,desc
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 0
+  size: 10
+  search: Ritesh
+  sort: firstName,desc
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,31 @@
+meta {
+  name: {{baseUrl}}/public/becomePartner
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/public/becomePartner
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "Ritesh",
+    "lastName": "Thete",
+    "email": "ritesh@example.com",
+    "phoneNumber": "9876543210",
+    "location": "Pune",
+    "propertyType": "Resort",
+    "numberOfRooms": 25,
+    "message": "I would like to list my resort on Spicy Mango platform.",
+    "updates": true
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
