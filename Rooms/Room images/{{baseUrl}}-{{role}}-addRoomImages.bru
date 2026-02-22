@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addRoomImages
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addRoomImages?roomId=34cf095c-e972-4581-9f7a-0bd13f821efc&imageUrl=http://localhost:8080/images/73e1e762-230c-4e2c-9a52-0af476f6aef0_NewFurnitureHomeDcor_Anthropologie.jpeg
+  body: none
+  auth: inherit
+}
+
+params:query {
+  roomId: 34cf095c-e972-4581-9f7a-0bd13f821efc
+  imageUrl: http://localhost:8080/images/73e1e762-230c-4e2c-9a52-0af476f6aef0_NewFurnitureHomeDcor_Anthropologie.jpeg
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

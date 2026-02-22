@@ -5,9 +5,14 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getDailyRatesForRoom/{stayflexiRoomTypeId}
+  url: {{baseUrl}}/{{role}}/getDailyRatesForRoom/12354?startDate=2026-02-22&endDate=2026-02-22
   body: none
   auth: inherit
+}
+
+params:query {
+  startDate: 2026-02-22
+  endDate: 2026-02-22
 }
 
 settings {

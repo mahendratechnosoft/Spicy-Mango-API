@@ -5,9 +5,16 @@ meta {
 }
 
 put {
-  url: {{baseUrl}}/{{role}}/updateRatePlan/{ratePlanId}
-  body: none
+  url: {{baseUrl}}/{{role}}/updateRatePlan/63fc9375-4416-43c6-915f-68caa3f52791
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+      "ratePlanName": "Standard Plan",
+      "ratePlanDescription": "Complimentary Indian Breakfast updated"
+    }
 }
 
 settings {
