@@ -1,0 +1,29 @@
+meta {
+  name: {{baseUrl}}/{{role}}/calculatePrice/{adminId}
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/public/calculatePrice/98973012-c27b-4fda-9423-a0266a80051c
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "stayflexiPropertyId": "30257",
+    "stayflexiRoomTypeId": "12354",
+    "stayflexiRatePlanId": "37521",
+    "checkInDate": "2026-02-23",
+    "checkOutDate": "2026-02-25",
+    "adultsCount": 2,
+    "childrenCount": 1,
+    "infantsCount": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
