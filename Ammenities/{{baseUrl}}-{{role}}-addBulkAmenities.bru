@@ -1,0 +1,36 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addBulkAmenities
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addBulkAmenities
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "amenityName": "Free WiFi",
+      "description": "High-speed wireless internet available in all areas",
+      "iconUrl": "http://91.203.133.210:9095/images/1d23eb24-e020-4100-b367-dc665c95d2dc_stamp.png"
+    },
+    {
+      "amenityName": "Swimming Pool",
+      "description": "Outdoor pool available from 7 AM to 10 PM",
+      "iconUrl": "http://91.203.133.210:9095/images/49efeedd-e805-4118-870d-0c4222bc6182_stamp.png"
+    },
+    {
+      "amenityName": "Parking",
+      "description": "Free private parking available on site",
+      "iconUrl": "http://91.203.133.210:9095/images/ca536d03-2e40-4ea5-92ae-62dd40b17993_stamp.png"
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

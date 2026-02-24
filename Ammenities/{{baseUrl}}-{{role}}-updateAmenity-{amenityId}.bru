@@ -1,0 +1,24 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateAmenity/{amenityId}
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateAmenity/58f6c641-4acf-48f8-bfd4-7806572a4bf3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "amenityName": "Free WiFi",
+    "description": "High-speed wireless internet available in all areas updated",
+    "iconUrl": "http://91.203.133.210:9095/images/1d23eb24-e020-4100-b367-dc665c95d2dc_stamp.png"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
