@@ -1,0 +1,34 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createMappedAmenities
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createMappedAmenities?propertyId=c186de93-2c0d-43d7-bedd-e1c58750fa7f&roomId=13e6f37c-4c52-4136-81bf-eb6ac035d42f
+  body: json
+  auth: inherit
+}
+
+params:query {
+  propertyId: c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  roomId: 13e6f37c-4c52-4136-81bf-eb6ac035d42f
+}
+
+body:json {
+  [
+    {
+      "amenityId": "e1438a93-3503-42b0-9967-f5fdbceaae5d",
+      "amenityName": "Parking",
+      "iconUrl": "http://91.203.133.210:9095/images/ca536d03-2e40-4ea5-92ae-62dd40b17993_stamp.png",
+      "sequence": 1,
+      "isPaid": false,
+      "price": null
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

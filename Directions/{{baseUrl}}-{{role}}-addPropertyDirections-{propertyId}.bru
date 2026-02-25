@@ -1,0 +1,39 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addPropertyDirections/{propertyId}
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addPropertyDirections/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "propertyDirectionsId": null,
+      "transportMode": "By Road",
+      "description": "Via Pune - Nashik Highway NH14 (120 kms)",
+      "sequence": 1
+    },
+    {
+      "propertyDirectionsId": null,
+      "transportMode": "By Road",
+      "description": "Via Mumbai Highway (116 km)",
+      "sequence": 2
+    },
+    {
+      "propertyDirectionsId": null,
+      "transportMode": "By Railway",
+      "description": "Mumbai Gujrat Express (Everyday)",
+      "sequence": 3
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

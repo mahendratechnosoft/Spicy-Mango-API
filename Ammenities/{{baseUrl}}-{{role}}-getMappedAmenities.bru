@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getMappedAmenities
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getMappedAmenities?propertyId=c186de93-2c0d-43d7-bedd-e1c58750fa7f&roomId=13e6f37c-4c52-4136-81bf-eb6ac035d42f
+  body: none
+  auth: inherit
+}
+
+params:query {
+  propertyId: c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  roomId: 13e6f37c-4c52-4136-81bf-eb6ac035d42f
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

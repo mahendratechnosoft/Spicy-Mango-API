@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/checkAmenityName
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/checkAmenityName?name=Mini Bar&excludeAmenityId=58f6c641-4acf-48f8-bfd4-7806572a4bf3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: Mini Bar
+  excludeAmenityId: 58f6c641-4acf-48f8-bfd4-7806572a4bf3
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
