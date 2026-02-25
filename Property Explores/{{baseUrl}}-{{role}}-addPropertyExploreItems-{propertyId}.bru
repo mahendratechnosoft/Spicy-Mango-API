@@ -1,0 +1,42 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addPropertyExploreItems/{propertyId}
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addPropertyExploreItems/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "exploreId": null,
+      "title": "Historical Temple",
+      "description": "Weaving the threads of opulence and ethereal tones, the bedroom on the ground floor provides a comforting sanctuary with a garden view.",
+      "imageUrl": "http://91.203.133.210:9095/images/historical_temple_demo.jpg",
+      "sequence": 1
+    },
+    {
+      "exploreId": null,
+      "title": "Natural Waterfall",
+      "description": "Weaving the threads of opulence and ethereal tones, the bedroom on the ground floor provides a comforting sanctuary with a garden view.",
+      "imageUrl": "http://91.203.133.210:9095/images/natural_waterfall_demo.jpg",
+      "sequence": 2
+    },
+    {
+      "exploreId": "81f07c59-7b8c-4466-a44c-6dcf60062a96",
+      "title": "Hidden Fish Spa updated",
+      "description": "Weaving the threads of opulence and ethereal tones, the bedroom on the ground floor provides a comforting sanctuary with a garden view.",
+      "imageUrl": "http://91.203.133.210:9095/images/hidden_fish_spa_demo.jpg",
+      "sequence": 3
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

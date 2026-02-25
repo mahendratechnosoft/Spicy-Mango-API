@@ -1,0 +1,35 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addPropertyFaqs/{propertyId}
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addPropertyFaqs/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "faqId": null,
+      "category": "House Rules",
+      "question": "Are pets allowed in the villa?",
+      "answer": "Yes, we are a pet-friendly property! However, we request that you notify us in advance so we can make the necessary arrangements.",
+      "sequence": 1
+    },
+    {
+      "faqId": null,
+      "category": "Booking & Payment",
+      "question": "What is the check-in and check-out time?",
+      "answer": "Standard check-in is at 2:00 PM and check-out is at 11:00 AM. Early check-in or late check-out is subject to availability and prior confirmation.",
+      "sequence": 2
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
