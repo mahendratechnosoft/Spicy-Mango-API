@@ -1,0 +1,45 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addPropertyExperiences/{propertyId}
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addPropertyExperiences/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "experienceId": null,
+      "title": "Jungle Safari",
+      "description": "Explore the deep forest with our guided jeep safari. Spot local wildlife and enjoy the natural beauty of the surrounding reserves.",
+      "imageUrl": "http://91.203.133.210:9095/images/jungle_safari_demo.jpg",
+      "isPaid": true,
+      "sequence": 1
+    },
+    {
+      "experienceId": null,
+      "title": "Breakfast in Caves",
+      "description": "Enjoy a curated breakfast experience inside a natural cave setting with stunning mountain views. A perfect romantic morning.",
+      "imageUrl": "http://91.203.133.210:9095/images/cave_breakfast_demo.jpg",
+      "isPaid": true,
+      "sequence": 2
+    },
+    {
+      "experienceId": "efa70911-2094-48a2-bc0b-461e8371e5a8",
+      "title": "Authentic SPA updated",
+      "description": "Relax and rejuvenate with our traditional Ayurvedic spa treatments, using organic local herbs and essential oils.",
+      "imageUrl": "http://91.203.133.210:9095/images/authentic_spa_demo.jpg",
+      "isPaid": true,
+      "sequence": 3
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

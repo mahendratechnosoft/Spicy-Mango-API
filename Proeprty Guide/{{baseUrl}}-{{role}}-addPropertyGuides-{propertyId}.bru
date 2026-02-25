@@ -1,0 +1,63 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addPropertyGuides/{propertyId}
+  type: http
+  seq: 21
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addPropertyGuides/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "category": "Tourist Attraction",
+      "distance": "8.5 km",
+      "guideId": "70cdcac5-e7da-48bd-b05c-cff2f9ae417f",
+      "placeName": "Government Rose Garden",
+      "sequence": 1
+    },
+    {
+      "category": "Tourist Attraction",
+      "distance": "9.3 km",
+      "guideId": "aabdec9e-52a3-42f9-a61c-c708d743e6d8",
+      "placeName": "Government Botanical Garden",
+      "sequence": 2
+    },
+    {
+      "category": "Tourist Attraction",
+      "distance": "9.9 km",
+      "guideId": "d1d699b5-a65f-40e5-9ffd-07ef3ddbe1d9",
+      "placeName": "The Tea Factory & The Tea Museum",
+      "sequence": 3
+    },
+    {
+      "category": "Transport",
+      "distance": "85 km",
+      "guideId": "7e911b26-f4cb-4591-b422-916d96baf1ed",
+      "placeName": "Coimbatore International Airport",
+      "sequence": 4
+    },
+    {
+      "category": "Transport",
+      "distance": "85 km",
+      "guideId": null,
+      "placeName": "Coimbatore International Railway Station",
+      "sequence": 5
+    },
+    {
+      "category": "Transport",
+      "distance": "85 km",
+      "guideId": null,
+      "placeName": "Coimbatore International Bus Stop",
+      "sequence": 6
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
