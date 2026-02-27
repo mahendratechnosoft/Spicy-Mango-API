@@ -1,0 +1,37 @@
+meta {
+  name: {{baseUrl}}/{{role}}/savHouseRulesForProperty/{propertyId}
+  type: http
+  seq: 28
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/savHouseRulesForProperty/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "sequence": 1,
+      "description": "Check-in is at 2:00 PM and Check-out is strictly at 11:00 AM."
+    },
+    {
+      "sequence": 2,
+      "description": "Smoking is strictly prohibited inside the rooms. A penalty of 2000 INR applies."
+    },
+    {
+      "sequence": 3,
+      "description": "Please maintain quiet hours between 10:00 PM and 06:00 AM."
+    },
+    {
+      "sequence": 4,
+      "description": "Unregistered guests are not allowed in the rooms after 8:00 PM."
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
