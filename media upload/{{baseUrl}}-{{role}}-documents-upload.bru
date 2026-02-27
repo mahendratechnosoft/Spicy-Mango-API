@@ -1,0 +1,24 @@
+meta {
+  name: {{baseUrl}}/{{role}}/documents/upload
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/documents/upload?file
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  file: 
+}
+
+body:multipart-form {
+  file: @file(D:\Testing Images\attendance_December_2025.xlsx)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
