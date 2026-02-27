@@ -1,0 +1,44 @@
+meta {
+  name: {{baseUrl}}/{{role}}/saveVillaSpaces/{propertyId}
+  type: http
+  seq: 28
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/saveVillaSpaces/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      
+      "sequence": 1,
+      "spaceName": "Bedroom 1",
+      "spaceSubtitle": "Kingsize Bed",
+      "imageUrl": "https://your-bucket.com/images/bed1.jpg",
+      "features": [
+        "1 Kingsize bed with 2 additional mattresses",
+        "Can accommodate 6 people",
+        "Has a Valley view Balcony"
+      ]
+    },
+    {
+      "sequence": 2,
+      "spaceName": "Swimming Pool",
+      "spaceSubtitle": "Adult + Kids",
+      "imageUrl": "https://your-bucket.com/images/pool.jpg",
+      "features": [
+        "Plunge Swimming pool for Adults & Kids",
+        "Safety Tubes and amenities",
+        "Poolside loungers available"
+      ]
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
