@@ -12,15 +12,34 @@ post {
 
 body:json {
   {
-    "code": "BIRTHDAY05",
-    "description": "New Year special discount offer",
+    "code": "VIPNEWYEAR",
+    "description": "Get 15% off up to ₹5,000 on Premium Villas and Resorts. Valid every New Year season on bookings over ₹20,000. Applies automatically!",
+    
     "discountType": "PERCENTAGE",
-    "discountValue": 5,
-    "maxDiscountAmount": 2000,
-    "minBookingAmount": 5000,
-    "startDate": "2026-02-10T00:00:00",
-    "endDate": "2026-02-12T23:59:59",
-    "maxUsageLimit": 100
+    "discountValue": 15.00,
+    "maxDiscountAmount": 5000.00,
+    "minBookingAmount": 20000.00,
+    
+    "startDate": "2026-01-01T00:00:00",
+    "endDate": "2030-12-31T23:59:59",
+    
+    "recurringYearly": true,
+    "recurringStartMonth": 12,
+    "recurringStartDay": 25,
+    "recurringEndMonth": 1,
+    "recurringEndDay": 5,
+    
+    "isActive": true,
+    "autoApply": true,
+    "maxUsageLimit": 500,
+    "maxUsagePerUser": 1,
+    
+    "targetPropertyTypes": [
+      "VILLA"
+    ],
+    "targetPropertyIds": [
+      "5c1f76d0-224f-4e9e-9db3-e2d9fd836082"
+    ]
   }
 }
 

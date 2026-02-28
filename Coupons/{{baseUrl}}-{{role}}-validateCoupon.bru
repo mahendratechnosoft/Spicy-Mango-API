@@ -5,14 +5,16 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/validateCoupon?code=BIRTHDAY21&bookingAmount=5000
+  url: {{baseUrl}}/{{role}}/validateCoupon?code=VIPNEWYEAR&bookingAmount=20000&propertyType=VILLA&propertyId=5c1f76d0-224f-4e9e-9db3-e2d9fd836082
   body: none
   auth: inherit
 }
 
 params:query {
-  code: BIRTHDAY21
-  bookingAmount: 5000
+  code: VIPNEWYEAR
+  bookingAmount: 20000
+  propertyType: VILLA
+  propertyId: 5c1f76d0-224f-4e9e-9db3-e2d9fd836082
 }
 
 settings {
