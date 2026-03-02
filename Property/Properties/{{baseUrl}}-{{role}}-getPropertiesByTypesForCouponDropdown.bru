@@ -1,0 +1,24 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getPropertiesByTypesForCouponDropdown
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/getPropertiesByTypesForCouponDropdown?propertyTypes
+  body: json
+  auth: inherit
+}
+
+params:query {
+  propertyTypes: 
+}
+
+body:json {
+  ["VILLA","HOTEL","RESORT"]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

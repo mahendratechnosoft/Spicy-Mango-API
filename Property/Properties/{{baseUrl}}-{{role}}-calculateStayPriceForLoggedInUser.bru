@@ -1,0 +1,31 @@
+meta {
+  name: {{baseUrl}}/{{role}}/calculateStayPriceForLoggedInUser
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/calculateStayPriceForLoggedInUser
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "stayflexiPropertyId": "31068",
+    "stayflexiRoomTypeId": "12353",
+    "stayflexiRatePlanId": "38742",
+    "checkInDate": "2026-03-08",
+    "checkOutDate": "2026-03-10",
+    "adultsCount": 1,
+    "childrenCount": 1,
+    "infantsCount": 0
+  //   "petsCount":1
+  //   "couponCode":"VIPNEWYEAR"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
