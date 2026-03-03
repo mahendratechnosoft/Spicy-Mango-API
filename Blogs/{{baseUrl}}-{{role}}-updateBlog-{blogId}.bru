@@ -1,0 +1,30 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateBlog/{blogId}
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateBlog/b6f8d168-9828-40a2-9962-cb24917d311a
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Coming Soon: Introducing Spicy Mango's First Pet-Friendly Eco Resort 2",
+    "slug": "coming-soon-introducing-spicy-mangos-first-pet-friendly-eco-resort-2",
+    "content": "<h2>Your furry friends deserve a vacation too!</h2><p>We are thrilled to announce that next month, we are opening the doors to our very first 100% pet-friendly eco resort.</p><p><em>[Admin Note: Remember to add the gallery images of the dog park here before publishing!]</em></p><p>Stay tuned for early-bird booking discounts.</p>",
+    "bannerImageUrl": "https://prodimagesbucket.blob.core.windows.net/blog-images/pet-friendly-teaser.jpg",
+    "excerpt": "Get ready for our biggest launch yet. A sneak peek into our upcoming eco-resort where pets are treated like royalty.",
+    "category": "Announcements",
+    "viewCount": 0,
+    "likeCount": 0,
+    "published": true
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,15 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllBlogs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllBlogs
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

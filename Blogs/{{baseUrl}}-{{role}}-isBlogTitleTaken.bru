@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/isBlogTitleTaken
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/isBlogTitleTaken?title=Coming Soon: Introducing Spicy Mango's First Pet-Friendly Eco Resor
+  body: none
+  auth: inherit
+}
+
+params:query {
+  title: Coming Soon: Introducing Spicy Mango's First Pet-Friendly Eco Resor
+  ~excludeBlogId: b6f8d168-9828-40a2-9962-cb24917d311a
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
