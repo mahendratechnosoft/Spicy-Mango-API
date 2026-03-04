@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{baseUrl}}/public/calculatePrice/98973012-c27b-4fda-9423-a0266a80051c
+  url: {{baseUrl}}/public/calculatePrice/{{adminId}}
   body: json
   auth: inherit
 }
@@ -13,7 +13,7 @@ post {
 body:json {
   {
     "stayflexiPropertyId": "30257",
-    "checkInDate": "2026-03-4",
+    "checkInDate": "2026-03-04",
     "checkOutDate": "2026-03-05",
     "couponCode": "",
     "rooms": [
@@ -26,28 +26,52 @@ body:json {
         "petsCount": 1
       },
       {
-        "stayflexiRoomTypeId": "12353",
+        "stayflexiRoomTypeId": "12354",
         "stayflexiRatePlanId": "37521",
         "adultsCount": 2,
-        "childrenCount": 2,
+        "childrenCount": 1,
         "infantsCount": 0,
-        "petsCount": 0
+        "petsCount": 1
+      },
+      {
+        "stayflexiRoomTypeId": "12354",
+        "stayflexiRatePlanId": "37521",
+        "adultsCount": 2,
+        "childrenCount": 1,
+        "infantsCount": 0,
+        "petsCount": 1
+      },
+      {
+        "stayflexiRoomTypeId": "12354",
+        "stayflexiRatePlanId": "37521",
+        "adultsCount": 2,
+        "childrenCount": 1,
+        "infantsCount": 0,
+        "petsCount": 1
       },
       {
         "stayflexiRoomTypeId": "12357",
+              "roomName":"check",
+  
         "stayflexiRatePlanId": "37521",
+        "ratePlanDescription":"check rate plan",
+  
         "adultsCount": 2,
-        "childrenCount": 0,
+        "childrenCount": 1,
         "infantsCount": 0,
-        "petsCount": 0
+        "petsCount": 1
       },
       {
         "stayflexiRoomTypeId": "12357",
+              "roomName":"check",
+  
         "stayflexiRatePlanId": "37521",
+        "ratePlanDescription":"check rate plan",
+  
         "adultsCount": 2,
-        "childrenCount": 0,
+        "childrenCount": 1,
         "infantsCount": 0,
-        "petsCount": 0
+        "petsCount": 1
       }
     ]
   }
