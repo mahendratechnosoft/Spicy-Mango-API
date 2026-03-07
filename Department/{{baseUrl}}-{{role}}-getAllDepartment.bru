@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllDepartment
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllDepartment?search=BD
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: BD
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

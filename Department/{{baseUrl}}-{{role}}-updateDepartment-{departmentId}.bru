@@ -1,0 +1,22 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateDepartment/{departmentId}
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateDepartment/74e6b292-e45c-4db0-81d2-ee64911eb133
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name":"Sales"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
