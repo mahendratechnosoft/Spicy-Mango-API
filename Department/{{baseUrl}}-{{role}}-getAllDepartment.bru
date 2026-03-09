@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllDepartment?search=BD
+  url: {{baseUrl}}/{{role}}/getAllDepartment
   body: none
   auth: inherit
 }
 
 params:query {
-  search: BD
+  ~search: BD
 }
 
 settings {
