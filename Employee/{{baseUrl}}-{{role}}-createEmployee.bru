@@ -1,0 +1,100 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createEmployee
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createEmployee
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "loginEmail": "employee1@gmail.com",
+    "password": "1234",
+    "firstName": "Rahul",
+    "lastName": "Sharma",
+    "phone": "+91 9876543210",
+    "address": "123 Main Street, Near City Center",
+    "gender": "Male",
+    "description": "Experienced front desk manager with 5 years in hospitality.",
+    "profileImageUrl": "https://example.com/profiles/rahul.jpg",
+    "departmentId": "dept-uuid-1234",
+    "departmentName": "Front Office",
+    "roleId": "role-uuid-5678",
+    "roleName": "Front Desk Manager",
+    "country": "India",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    
+    "moduleAccess": {
+      "dashboardAccess": true,
+  
+      "propertyAccess": true,
+      "propertyViewAll": true,
+      "propertyCreate": false,
+      "propertyEdit": false,
+      "propertyDelete": false,
+  
+      "amenitiesAccess": true,
+      "amenitiesViewAll": true,
+      "amenitiesCreate": false,
+      "amenitiesEdit": false,
+      "amenitiesDelete": false,
+  
+      "bookingEnquiryAccess": true,
+      "bookingEnquiryViewAll": true,
+      "bookingEnquiryCreate": true,
+      "bookingEnquiryEdit": true,
+      "bookingEnquiryDelete": false,
+  
+      "customerAccess": true,
+      "customerViewAll": true,
+      "customerCreate": true,
+      "customerEdit": true,
+      "customerDelete": false,
+  
+      "couponAccess": false,
+      "couponViewAll": false,
+      "couponCreate": false,
+      "couponEdit": false,
+      "couponDelete": false,
+  
+      "blogAccess": false,
+      "blogViewAll": false,
+      "blogCreate": false,
+      "blogEdit": false,
+      "blogDelete": false,
+  
+      "becomePartnerAccess": false,
+      "becomePartnerViewAll": false,
+      "becomePartnerEdit": false,
+      "becomePartnerDelete": false,
+  
+      "eventEnquiryAccess": true,
+      "eventEnquiryViewAll": true,
+      "eventEnquiryEdit": true,
+      "eventEnquiryDelete": false,
+  
+      "contactUsAccess": true,
+      "contactUsViewAll": true,
+      "contactUsEdit": true,
+      "contactUsDelete": false,
+  
+      "feedbackAccess": true,
+      "feedbackViewAll": true,
+      "feedbackEdit": true,
+      "feedbackDelete": false,
+  
+      "customizationAccess": false,
+      "customizationEdit": false
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
