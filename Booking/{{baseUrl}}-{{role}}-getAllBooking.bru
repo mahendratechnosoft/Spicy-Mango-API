@@ -5,19 +5,19 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllBooking?page=0&size=10&sort=customerEmail,desc&startDate=07-02-2026&endDate=07-02-2026&status=CANCELLED&search=ritesh
+  url: {{baseUrl}}/{{role}}/getAllBooking
   body: none
   auth: bearer
 }
 
 params:query {
-  page: 0
-  size: 10
-  sort: customerEmail,desc
-  startDate: 07-02-2026
-  endDate: 07-02-2026
-  status: CANCELLED
-  search: ritesh
+  ~page: 0
+  ~size: 10
+  ~sort: customerEmail,desc
+  ~startDate: 07-02-2026
+  ~endDate: 07-02-2026
+  ~status: CANCELLED
+  ~search: ritesh
 }
 
 auth:bearer {
