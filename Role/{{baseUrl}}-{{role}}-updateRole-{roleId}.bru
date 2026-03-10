@@ -1,0 +1,73 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateRole/{roleId}
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateRole/70e2360a-ccb2-477b-a0be-c9d7e7404f36
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "one  updated",
+    "amenitiesAccess": false,
+    "amenitiesCreate": false,
+    "amenitiesDelete": false,
+    "amenitiesEdit": false,
+    "amenitiesViewAll": false,
+    "becomePartnerAccess": false,
+    "becomePartnerDelete": false,
+    "becomePartnerEdit": false,
+    "becomePartnerViewAll": false,
+    "blogAccess": false,
+    "blogCreate": false,
+    "blogDelete": false,
+    "blogEdit": false,
+    "blogViewAll": false,
+    "bookingEnquiryAccess": false,
+    "bookingEnquiryCreate": false,
+    "bookingEnquiryDelete": false,
+    "bookingEnquiryEdit": false,
+    "bookingEnquiryViewAll": false,
+    "contactUsAccess": false,
+    "contactUsDelete": false,
+    "contactUsEdit": false,
+    "contactUsViewAll": false,
+    "couponAccess": false,
+    "couponCreate": false,
+    "couponDelete": false,
+    "couponEdit": false,
+    "couponViewAll": false,
+    "createdAt": "2026-03-10T15:08:18.116163",
+    "createdBy": "QA Admin Test",
+    "customerAccess": false,
+    "customerCreate": false,
+    "customerDelete": false,
+    "customerEdit": false,
+    "customerViewAll": false,
+    "customizationAccess": false,
+    "customizationEdit": false,
+    "dashboardAccess": false,
+    "eventEnquiryAccess": false,
+    "eventEnquiryDelete": false,
+    "eventEnquiryEdit": false,
+    "eventEnquiryViewAll": false,
+    "feedbackAccess": false,
+    "feedbackDelete": false,
+    "feedbackEdit": false,
+    "feedbackViewAll": false,
+    "propertyAccess": false,
+    "propertyCreate": false,
+    "propertyDelete": false,
+    "propertyEdit": false,
+    "propertyViewAll": false
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
