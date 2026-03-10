@@ -1,0 +1,22 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllEmployees
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllEmployees
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~page: 0
+  ~size: 1
+  ~search: mahesh
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
