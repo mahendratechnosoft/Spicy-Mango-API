@@ -1,0 +1,16 @@
+meta {
+  name: {{baseUrl}}/public/homeCollections/{adminId}
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/public/homeCollections/{{adminId}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,40 @@
+meta {
+  name: {{baseUrl}}/{{role}}/saveHomeCollections
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/saveHomeCollections
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    { "homeCollectionId": "c722cbcc-1158-4362-a405-4e4266780ba5",
+      "collectionTitle": "Luxury Villas updated",
+      "imageUrl": "https://spicymango.com/images/luxury-villas.jpg",
+      "sequence": 1,
+      "active": true
+    },
+    {
+      "collectionTitle": "Cozy Cottages",
+      "imageUrl": "https://spicymango.com/images/cozy-cottages.jpg",
+      "sequence": 2,
+      "active": true
+    },
+    {
+      "homeCollectionId": "02a4083f-9877-4507-8f78-75dbc488e534",
+      "collectionTitle": "Beachfront Properties",
+      "imageUrl": "https://spicymango.com/images/beachfront.jpg",
+      "sequence": 3,
+      "active": false
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

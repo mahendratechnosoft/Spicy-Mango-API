@@ -1,0 +1,15 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllHomeCollections
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllHomeCollections
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
