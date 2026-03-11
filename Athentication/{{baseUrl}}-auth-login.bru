@@ -16,7 +16,7 @@ headers {
 
 body:json {
   {
-    "email":"adminQA@gmail.com",
+    "email":"admin@gmail.com",
     "password":"1234"
   }
 }
@@ -35,7 +35,7 @@ script:post-response {
   } else if (roleResponce === "ROLE_CUSTOMER") {
       role = "customer";
   }  else if (roleResponce === "ROLE_EMPLOYEE") {
-      role = "employee";
+      role = "admin";
   }
   bru.setEnvVar("bearerToken", token);
   bru.setEnvVar("role", role);

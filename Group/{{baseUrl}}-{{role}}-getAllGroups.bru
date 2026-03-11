@@ -1,0 +1,15 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllGroups
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllGroups
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

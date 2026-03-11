@@ -1,0 +1,46 @@
+meta {
+  name: {{baseUrl}}/{{role}}/saveGroup
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/saveGroup
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "guestGroupId": "613d1969-4271-4ace-9a4f-cd57ddcea53b",
+      "groupTitle": "Couples Retreat updated",
+      "imageUrl": "https://spicymango.com/images/couples-retreat.jpg",
+      "minGuest": 1,
+      "maxGuest": 2,
+      "sequence": 1,
+      "active": true
+    },
+    {
+      "groupTitle": "Family Getaway",
+      "imageUrl": "https://spicymango.com/images/family-getaway.jpg",
+      "minGuest": 4,
+      "maxGuest": 10,
+      "sequence": 2,
+      "active": true
+    },
+    {
+      "groupTitle": "Corporate Outing",
+      "imageUrl": "https://spicymango.com/images/corporate.jpg",
+      "minGuest": 10,
+      "maxGuest": 50,
+      "sequence": 3,
+      "active": false
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
