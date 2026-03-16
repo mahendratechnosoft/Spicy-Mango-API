@@ -1,0 +1,45 @@
+meta {
+  name: {{baseUrl}}/{{role}}/saveClientExperience
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/saveClientExperience
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "imageUrl": "https://example.com/image.jpg",
+      "clientName": "John Doe",
+      "propertyName": "Green Valley Residency",
+      "content": "This property experience was excellent with great amenities.",
+      "sequence": 1,
+      "active": true
+    },
+    {
+      "imageUrl": "https://example.com/image.jpg",
+      "clientName": "John Doe",
+      "propertyName": "Green Valley Residency",
+      "content": "This property experience was excellent with great amenities.",
+      "sequence": 2,
+      "active": false
+    },
+    {
+      "imageUrl": "https://example.com/image.jpg",
+      "clientName": "John Doe",
+      "propertyName": "Green Valley Residency",
+      "content": "This property experience was excellent with great amenities.",
+      "sequence": 3,
+      "active": true
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

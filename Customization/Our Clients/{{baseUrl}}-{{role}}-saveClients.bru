@@ -1,0 +1,26 @@
+meta {
+  name: {{baseUrl}}/{{role}}/saveClients
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/saveClients
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "clientId": "36e7c9b4-5e3d-48e3-85fe-5207ed10f321",
+    "imageUrl": [
+      "kartik1",
+      "check"
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
