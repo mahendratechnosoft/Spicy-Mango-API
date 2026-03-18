@@ -4,9 +4,9 @@ meta {
   seq: 4
 }
 
-get {
+put {
   url: {{baseUrl}}/{{role}}/getAllCoupons?page=0&size=10
-  body: none
+  body: json
   auth: inherit
 }
 
@@ -15,6 +15,18 @@ params:query {
   size: 10
   ~search: BIRTHDAY05
   ~sort: createdAt,asc
+}
+
+body:json {
+  {
+    "targetPropertyTypes":[
+      "RESORT"
+    ],
+    "targetPropertyIds":[
+      "4bdb7280-e5e2-433c-91b2-206557d77fb4"
+    ]
+    
+  }
 }
 
 settings {
