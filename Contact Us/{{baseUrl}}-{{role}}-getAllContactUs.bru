@@ -5,9 +5,14 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllContactUs
+  url: {{baseUrl}}/{{role}}/getAllContactUs?search&formType=Villa-Management
   body: none
   auth: inherit
+}
+
+params:query {
+  search: 
+  formType: Villa-Management
 }
 
 settings {
