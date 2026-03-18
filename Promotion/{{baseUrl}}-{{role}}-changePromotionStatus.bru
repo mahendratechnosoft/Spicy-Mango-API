@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/changePromotionStatus
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/changePromotionStatus?promotionId=70642eac-9f71-4d62-a987-3886d0a194cf
+  body: none
+  auth: inherit
+}
+
+params:query {
+  promotionId: 70642eac-9f71-4d62-a987-3886d0a194cf
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
