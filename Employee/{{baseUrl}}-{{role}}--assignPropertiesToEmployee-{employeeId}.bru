@@ -1,0 +1,28 @@
+meta {
+  name: {{baseUrl}}/{{role}}//assignPropertiesToEmployee/{employeeId}
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/assignPropertiesToEmployee/1a9375b8-a930-4143-9eba-2cd85552158b
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{bearerToken}}
+}
+
+body:json {
+  {
+    "propertyIds": [
+      "8c6cd8f2-493f-4e72-b9d1-e5e8ce535a23"
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
