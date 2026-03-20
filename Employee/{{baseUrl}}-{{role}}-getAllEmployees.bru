@@ -5,15 +5,15 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllEmployees
+  url: {{baseUrl}}/{{role}}/getAllEmployees?search=employee123
   body: none
   auth: inherit
 }
 
 params:query {
+  search: employee123
   ~page: 0
   ~size: 1
-  ~search: mahesh
 }
 
 settings {
