@@ -5,7 +5,7 @@ meta {
 }
 
 put {
-  url: {{baseUrl}}/{{role}}/getAllCoupons?page=0&size=10
+  url: {{baseUrl}}/{{role}}/getAllCoupons?page=0&size=10&sort=createdAt,asc
   body: json
   auth: inherit
 }
@@ -13,17 +13,17 @@ put {
 params:query {
   page: 0
   size: 10
-  ~search: BIRTHDAY05
-  ~sort: createdAt,asc
+  sort: createdAt,asc
+  ~search: CPN-LPHAAC
 }
 
 body:json {
   {
     "targetPropertyTypes":[
-      "RESORT"
+    
     ],
     "targetPropertyIds":[
-      "4bdb7280-e5e2-433c-91b2-206557d77fb4"
+      
     ]
     
   }
