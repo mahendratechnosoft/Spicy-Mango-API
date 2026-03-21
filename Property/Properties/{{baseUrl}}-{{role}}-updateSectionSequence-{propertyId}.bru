@@ -1,0 +1,25 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateSectionSequence/{propertyId}
+  type: http
+  seq: 14
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateSectionSequence/ef545408-298e-4b1b-a6cb-3ed7940a570d
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  //   "sectionName": "OUR_VILLAS",
+  //   "sectionName": "OUR_RESORT",
+    "sectionName": "OUR_EXCLUSIVE",
+    "sequenceRank": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
