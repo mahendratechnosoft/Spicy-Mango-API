@@ -1,0 +1,22 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateBookingEnquiryBeforeLiveStatus/{enquryid}
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateBookingEnquiryBeforeLiveStatus/6367d627-c762-49f8-9881-07e20b1205d7
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "status":"Interested"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

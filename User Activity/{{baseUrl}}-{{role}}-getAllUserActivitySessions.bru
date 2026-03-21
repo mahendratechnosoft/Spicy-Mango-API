@@ -1,0 +1,30 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllUserActivitySessions
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/getAllUserActivitySessions?page=0&size=10
+  body: json
+  auth: inherit
+}
+
+params:query {
+  page: 0
+  size: 10
+}
+
+body:json {
+  {
+  //   "customerId": "cust-12345-abcde",
+  //   "propertyId": "ef545408-298e-4b1b-a6cb-3ed7940a570d",
+  //   "startDate": "2023-10-01",
+  //   "endDate": "2023-10-31"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
