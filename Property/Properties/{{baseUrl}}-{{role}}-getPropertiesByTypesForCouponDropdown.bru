@@ -5,13 +5,9 @@ meta {
 }
 
 post {
-  url: {{baseUrl}}/{{role}}/getPropertiesByTypesForCouponDropdown?propertyTypes
+  url: {{baseUrl}}/{{role}}/getPropertiesByTypesForCouponDropdown
   body: json
   auth: inherit
-}
-
-params:query {
-  propertyTypes: 
 }
 
 body:json {

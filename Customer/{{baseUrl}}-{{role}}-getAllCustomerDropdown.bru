@@ -1,0 +1,16 @@
+meta {
+  name: {{baseUrl}}/{{role}}/getAllCustomerDropdown
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/getAllCustomerDropdown
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
