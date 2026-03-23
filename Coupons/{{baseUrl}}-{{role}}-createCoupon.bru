@@ -12,7 +12,7 @@ post {
 
 body:json {
   {
-    "code": "CPN-NEW10",
+    "code": "Test",
     "description": "",
     "discountType": "PERCENTAGE",
     "discountValue": 10.00,
@@ -33,15 +33,20 @@ body:json {
     "targetPropertyTypes": [
       "HOTEL"
     ],
-    "targetPropertyIds": [
-      "f0165039-c93e-4cdc-9436-3583354ba236"
-    ],
-    "targetRoomTypeIds":[
-      "12354"
-      ],
-    "targetRatePlanIds": [
-      "38300"
+    "couponTargets": [
+      {
+        "propertyId": "f0165039-c93e-4cdc-9436-3583354ba236",
+        "rooms": [
+          {
+            "roomTypeId": "12354",
+            "ratePlanIds": [
+              "38300"
+            ]
+          }
+        ]
+      }
     ]
+  
   }
 }
 
