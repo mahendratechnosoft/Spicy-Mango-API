@@ -5,7 +5,7 @@ meta {
 }
 
 put {
-  url: {{baseUrl}}/{{role}}/getAllCoupons?page=0&size=10
+  url: {{baseUrl}}/{{role}}/getAllCoupons?page=0&size=10&sort=createdAt,asc
   body: json
   auth: inherit
 }
@@ -13,7 +13,7 @@ put {
 params:query {
   page: 0
   size: 10
-  ~sort: createdAt,asc
+  sort: createdAt,asc
   ~search: CPN-LPHAAC
 }
 

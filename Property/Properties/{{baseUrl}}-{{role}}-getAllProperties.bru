@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllProperties?page=0&size=10&search=CanvaSand
+  url: {{baseUrl}}/{{role}}/getAllProperties?page=0&size=10
   body: none
   auth: inherit
 }
@@ -13,7 +13,7 @@ get {
 params:query {
   page: 0
   size: 10
-  search: CanvaSand
+  ~search: CanvaSand
   ~propertyType: Villa
   ~city: Bangalore
 }
