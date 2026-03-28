@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/{{role}}/getAllEmployees
+  url: {{baseUrl}}/{{role}}/getAllEmployees?search=employee11
   body: none
   auth: inherit
 }
 
 params:query {
-  ~search: employee123
+  search: employee11
   ~page: 0
   ~size: 1
 }
