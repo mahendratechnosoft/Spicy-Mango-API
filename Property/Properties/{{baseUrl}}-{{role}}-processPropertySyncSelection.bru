@@ -1,0 +1,37 @@
+meta {
+  name: {{baseUrl}}/{{role}}/processPropertySyncSelection
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/processPropertySyncSelection
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "stayflexiHotelId": "30257",
+    "createMainProperty": true,
+    "mainPropertyRoomIds": [
+      "12353",
+      "12354"
+    ],
+    "independentProperties": [
+      {
+        "roomId": "12357",
+        "customPropertyName": "my new property"
+      },
+      {
+        "roomId": "12355",
+        "customPropertyName": "new property name"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

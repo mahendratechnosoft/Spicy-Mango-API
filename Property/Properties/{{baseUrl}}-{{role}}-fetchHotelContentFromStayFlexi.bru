@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/fetchHotelContentFromStayFlexi
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{baseUrl}}/{{role}}/fetchHotelContentFromStayFlexi?hotelId=30257
+  body: none
+  auth: inherit
+}
+
+params:query {
+  hotelId: 30257
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
