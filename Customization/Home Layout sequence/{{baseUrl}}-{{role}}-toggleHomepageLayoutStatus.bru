@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/{{role}}/toggleHomepageLayoutStatus
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/toggleHomepageLayoutStatus?homepageLayoutId=bc9a0fb4-eaca-469e-bf87-f5040278c2cb
+  body: none
+  auth: inherit
+}
+
+params:query {
+  homepageLayoutId: bc9a0fb4-eaca-469e-bf87-f5040278c2cb
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}/public/getAllHomepageLayout
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/public/getAllHomepageLayout?adminId=fd6d1a19-d4dc-4ee1-92b4-6c1cc41191ec
+  body: json
+  auth: inherit
+}
+
+params:query {
+  adminId: fd6d1a19-d4dc-4ee1-92b4-6c1cc41191ec
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

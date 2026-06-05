@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updateHomepageLayoutSequence
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updateHomepageLayoutSequence?homepageLayoutId=bc9a0fb4-eaca-469e-bf87-f5040278c2cb&newSequence=5
+  body: none
+  auth: inherit
+}
+
+params:query {
+  homepageLayoutId: bc9a0fb4-eaca-469e-bf87-f5040278c2cb
+  newSequence: 5
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
