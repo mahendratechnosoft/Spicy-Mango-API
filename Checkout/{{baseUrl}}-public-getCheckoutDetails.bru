@@ -1,0 +1,28 @@
+meta {
+  name: {{baseUrl}}/public/getCheckoutDetails
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/public/getCheckoutDetails
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{bearerToken}}
+}
+
+body:json {
+  {
+    "checkoutId":"905c1fd3-6e40-4df7-9fb1-6d56565123f8"
+  //   "couponCode":"CPN-4OOOQU",
+  //   "foodIncluded":false
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

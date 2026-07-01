@@ -1,0 +1,48 @@
+meta {
+  name: {{baseUrl}}/{{role}}/addRefundPolicies/{propertyId}
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/addRefundPolicies/1d4a574c-5ae7-4745-a4ae-294fcc96de98
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "refundPolicyId": "dc19e765-d69e-4ec2-802e-34d1a7dd1d1f",
+      "category": "Refunds & Processing",
+      "description": "Refunds will be processed within 10 working days from the cancellation date, after deducting a 10% processing fee.",
+      "sequence": 1
+    },
+    {
+      "refundPolicyId": "8ca80d60-aa5c-4137-9921-0289435d30e0",
+      "category": "Refunds & Processing",
+      "description": "Bookings made via third-party platforms (MakeMyTrip, Booking.com, Airbnb, etc.) are subject to their respective cancellation and refund policies.",
+      "sequence": 2
+    },
+    {
+      "category": "New category",
+      "description": "last sd",
+      "sequence": 3
+    },
+    {
+      "category": "New category",
+      "description": "last df",
+      "sequence": 4
+    },
+    {
+      "category": "New category",
+      "description": "last sda",
+      "sequence": 5
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

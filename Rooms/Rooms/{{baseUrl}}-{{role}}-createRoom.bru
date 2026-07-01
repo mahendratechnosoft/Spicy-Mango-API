@@ -1,0 +1,35 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createRoom
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createRoom
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "stayflexiRoomTypeId": "16",
+    "propertyId": "f7f2e56e-089c-4e3f-a032-1cc329acb79a",
+    "stayflexiPropertyId": "1",
+    "adminId": "ad6bfc5a-f4d9-48b5-9ee0-41a0331cf88b",
+    "roomTypeName": "Deluxe Room",
+    "roomTypeDescription": "Spacious deluxe room with king-size bed, balcony, air conditioning, Wi-Fi, and complimentary breakfast.",
+    "maxOccupants": 4,
+    "maxPossible": 5,
+    "maxChildren": 2,
+    "maxInfants": 1,
+    "maxPets": 0,
+    "bannerImgUrl": null,
+    "ratting": 4.5,
+    "totalRooms": 10
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

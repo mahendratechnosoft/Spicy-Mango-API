@@ -1,0 +1,38 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createDailyRatesForNext30Days
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createDailyRatesForNext30Days
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ratePlanId": "03631859-7064-44d1-9ccb-d7973eeb55d7",
+    "stayflexiRatePlanId": "1",
+    "stayflexiRoomTypeId": "17",
+    "stayflexiPropertyId": "1",
+    "propertyId": "f7f2e56e-089c-4e3f-a032-1cc329acb79a",
+    "childRate": 200.0,
+    "infantRate": 0.0,
+    "basePrice": 5999.0,
+    "availableRooms": 15,
+    "occupancyRates": {
+      "1": 5999.0,
+      "2": 5999.0,
+      "3": 5999.0,
+      "4": 5999.0,
+      "5": 5999.0,
+      "6": 5999.0
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

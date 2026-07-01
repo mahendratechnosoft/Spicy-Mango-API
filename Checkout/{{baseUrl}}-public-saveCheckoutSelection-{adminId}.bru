@@ -1,0 +1,37 @@
+meta {
+  name: {{baseUrl}}/public/saveCheckoutSelection/{adminId}
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/public/saveCheckoutSelection/fd6d1a19-d4dc-4ee1-92b4-6c1cc41191ec
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "propertyId": "97da48ac-855b-47d4-96a7-c681b5ecb1b5",
+      "checkInDate": "2026-07-17",
+      "checkOutDate": "2026-07-18",
+      "couponCode": "",
+      "rooms": [
+          {
+              "stayflexiRoomTypeId": "12353",
+              "stayflexiRatePlanId": "37519",
+              "adultsCount": 1,
+              "childrenCount": 0,
+              "infantsCount": 0,
+              "roomName": "Deluxe Room",
+              "ratePlanDescription": "Complimentary Indian Breakfast"
+          }
+      ],
+      "includeFood": false
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

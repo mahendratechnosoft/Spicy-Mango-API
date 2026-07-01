@@ -1,0 +1,31 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createRatePlan
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createRatePlan
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "stayflexiRoomTypeId": "6",
+    "stayflexiRatePlanId": "1",
+    "ratePlanName": "Standard Plan",
+    "ratePlanDescription": "Standard Plan",
+    "propertyId": "f7f2e56e-089c-4e3f-a032-1cc329acb79a",
+    "stayflexiPropertyId": "1",
+    "childMinAge": 2,
+    "childMaxAge": 12,
+    "infantMinAge": 0,
+    "infantMaxAge": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
