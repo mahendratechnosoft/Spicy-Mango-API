@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/public/searchSuggestions/{adminId}
+  type: http
+  seq: 27
+}
+
+get {
+  url: {{baseUrl}}/public/getLocalAndProperty/fd6d1a19-d4dc-4ee1-92b4-6c1cc41191ec?search=can
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: can
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
