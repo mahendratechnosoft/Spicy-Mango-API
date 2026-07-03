@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/public/getAllFooterLocationLink
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/public/getAllFooterLocationLink?adminId={{adminId}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  adminId: {{adminId}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
