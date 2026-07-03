@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/createPerfectGetaway
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/{{role}}/createPerfectGetaway
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "imageUrl":"https://png.pngtree.com/png-vector/20250611/ourmid/pngtree-majestic-gateway-of-india-mumbai-architectural-landmark-png-image_16518014.png",
+    "location":"mumbai"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

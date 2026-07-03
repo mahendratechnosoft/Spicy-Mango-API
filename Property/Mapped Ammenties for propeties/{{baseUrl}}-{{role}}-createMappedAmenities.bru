@@ -5,26 +5,53 @@ meta {
 }
 
 post {
-  url: {{baseUrl}}/{{role}}/createMappedAmenities?propertyId=c186de93-2c0d-43d7-bedd-e1c58750fa7f&roomId=13e6f37c-4c52-4136-81bf-eb6ac035d42f
+  url: {{baseUrl}}/{{role}}/createMappedAmenities?propertyId=ec98c871-fc96-4a9b-8374-0245b9f6b787&roomId=39cdf46c-8dce-465b-93f7-9259b4126094
   body: json
   auth: inherit
 }
 
 params:query {
-  propertyId: c186de93-2c0d-43d7-bedd-e1c58750fa7f
-  roomId: 13e6f37c-4c52-4136-81bf-eb6ac035d42f
+  propertyId: ec98c871-fc96-4a9b-8374-0245b9f6b787
+  roomId: 39cdf46c-8dce-465b-93f7-9259b4126094
 }
 
 body:json {
   [
-    {
-      "amenityId": "e1438a93-3503-42b0-9967-f5fdbceaae5d",
-      "amenityName": "Parking",
-      "iconUrl": "http://91.203.133.210:9095/images/ca536d03-2e40-4ea5-92ae-62dd40b17993_stamp.png",
-      "sequence": 1,
-      "isPaid": false,
-      "price": null
-    }
+      {
+          "amenityId": "f73434b6-8834-4d56-93e0-eddbd6d82e16",
+          "amenityName": "Amenity 10",
+          "iconUrl": "http://localhost:8080/images/62bf3021-289f-4989-bbc1-a2d3f2aad7e8_stamp.png",
+          "sequence": 0,
+          "isPaid": false,
+          "price": null,
+        "category":"test"
+      },
+      {
+          "amenityId": "b114fd24-2efa-416e-9295-7723721aa042",
+          "amenityName": "Amenity 2",
+          "iconUrl": "http://localhost:8080/images/940ed03e-8cc5-4f17-95d6-f99f38d29ab2_stamp.png",
+          "sequence": 1,
+          "isPaid": false,
+          "price": null,
+        "category":"test"
+      },
+      {
+          "amenityId": "35da6aaf-4deb-4124-a063-f94924dcbe63",
+          "amenityName": "Amenity 3",
+          "iconUrl": "http://localhost:8080/images/15f14203-8100-455a-b2cb-bd557ac55a32_stamp.png",
+          "sequence": 2,
+          "isPaid": false,
+          "price": null,
+        "category":"test"
+      },
+      {
+          "amenityId": "88bae6a8-ff1f-4f9e-8d0d-d18db054b9a9",
+          "amenityName": "Amenity 4",
+          "iconUrl": "http://localhost:8080/images/0c3fb906-4d9b-4b06-8d41-73b82870640e_stamp.png",
+          "sequence": 3,
+          "isPaid": false,
+          "price": null
+      }
   ]
 }
 

@@ -1,0 +1,23 @@
+meta {
+  name: {{baseUrl}}/{{role}}/updatePerfectGetaway/{perfectGetawayId}
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/updatePerfectGetaway/ccba84b8-4dce-45df-bf45-dd7cbfa3af2e
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "imageUrl":"https://png.pngtree.com/png-vector/20250611/ourmid/pngtree-majestic-gateway-of-india-mumbai-architectural-landmark-png-image_16518014.png",
+    "location":"bombe"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

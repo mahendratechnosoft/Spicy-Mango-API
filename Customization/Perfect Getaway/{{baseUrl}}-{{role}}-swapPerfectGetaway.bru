@@ -1,0 +1,21 @@
+meta {
+  name: {{baseUrl}}/{{role}}/swapPerfectGetaway
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/{{role}}/swapPerfectGetaway?firstId=ccba84b8-4dce-45df-bf45-dd7cbfa3af2e&secondId=b16d7d58-c726-4e44-8a10-cacda3f61e97
+  body: none
+  auth: inherit
+}
+
+params:query {
+  firstId: ccba84b8-4dce-45df-bf45-dd7cbfa3af2e
+  secondId: b16d7d58-c726-4e44-8a10-cacda3f61e97
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

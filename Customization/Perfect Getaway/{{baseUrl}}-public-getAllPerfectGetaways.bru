@@ -1,0 +1,20 @@
+meta {
+  name: {{baseUrl}}/public/getAllPerfectGetaways
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/public/getAllPerfectGetaways?adminId={{adminId}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  adminId: {{adminId}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
