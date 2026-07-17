@@ -5,7 +5,7 @@ meta {
 }
 
 put {
-  url: {{baseUrl}}/{{role}}/savHouseRulesForProperty/c186de93-2c0d-43d7-bedd-e1c58750fa7f
+  url: {{baseUrl}}/{{role}}/savHouseRulesForProperty/97da48ac-855b-47d4-96a7-c681b5ecb1b5
   body: json
   auth: inherit
 }
@@ -14,19 +14,23 @@ body:json {
   [
     {
       "sequence": 1,
-      "description": "Check-in is at 2:00 PM and Check-out is strictly at 11:00 AM."
+      "description": "Check-in is at 2:00 PM and Check-out is strictly at 11:00 AM.",
+      "category":"new"
     },
     {
       "sequence": 2,
-      "description": "Smoking is strictly prohibited inside the rooms. A penalty of 2000 INR applies."
+      "description": "Smoking is strictly prohibited inside the rooms. A penalty of 2000 INR applies.",
+      "category":"new"
     },
     {
       "sequence": 3,
-      "description": "Please maintain quiet hours between 10:00 PM and 06:00 AM."
+      "description": "Please maintain quiet hours between 10:00 PM and 06:00 AM.",
+      "category":"Old"
     },
     {
       "sequence": 4,
-      "description": "Unregistered guests are not allowed in the rooms after 8:00 PM."
+      "description": "Unregistered guests are not allowed in the rooms after 8:00 PM.",
+      "category":null
     }
   ]
 }

@@ -5,52 +5,54 @@ meta {
 }
 
 post {
-  url: {{baseUrl}}/{{role}}/createMappedAmenities?propertyId=ec98c871-fc96-4a9b-8374-0245b9f6b787&roomId=39cdf46c-8dce-465b-93f7-9259b4126094
+  url: {{baseUrl}}/{{role}}/createMappedAmenities?propertyId=8f28f6ea-9c9a-4f2a-92c0-7129cc92a5be&roomId=29911b80-39c7-4739-8aff-9c36924d83a8
   body: json
   auth: inherit
 }
 
 params:query {
-  propertyId: ec98c871-fc96-4a9b-8374-0245b9f6b787
-  roomId: 39cdf46c-8dce-465b-93f7-9259b4126094
+  propertyId: 8f28f6ea-9c9a-4f2a-92c0-7129cc92a5be
+  roomId: 29911b80-39c7-4739-8aff-9c36924d83a8
 }
 
 body:json {
   [
       {
-          "amenityId": "f73434b6-8834-4d56-93e0-eddbd6d82e16",
-          "amenityName": "Amenity 10",
-          "iconUrl": "http://localhost:8080/images/62bf3021-289f-4989-bbc1-a2d3f2aad7e8_stamp.png",
-          "sequence": 0,
-          "isPaid": false,
-          "price": null,
-        "category":"test"
-      },
-      {
           "amenityId": "b114fd24-2efa-416e-9295-7723721aa042",
           "amenityName": "Amenity 2",
           "iconUrl": "http://localhost:8080/images/940ed03e-8cc5-4f17-95d6-f99f38d29ab2_stamp.png",
-          "sequence": 1,
+          "category": "one ",
+          "sequence": 0,
           "isPaid": false,
-          "price": null,
-        "category":"test"
+          "price": null
       },
       {
           "amenityId": "35da6aaf-4deb-4124-a063-f94924dcbe63",
           "amenityName": "Amenity 3",
           "iconUrl": "http://localhost:8080/images/15f14203-8100-455a-b2cb-bd557ac55a32_stamp.png",
-          "sequence": 2,
+          "category": "two",
+          "sequence": 1,
           "isPaid": false,
-          "price": null,
-        "category":"test"
+          "price": null
       },
       {
           "amenityId": "88bae6a8-ff1f-4f9e-8d0d-d18db054b9a9",
           "amenityName": "Amenity 4",
           "iconUrl": "http://localhost:8080/images/0c3fb906-4d9b-4b06-8d41-73b82870640e_stamp.png",
-          "sequence": 3,
+          "category": "one",
+          "sequence": 2,
           "isPaid": false,
           "price": null
+      },
+      {
+          "amenityId": "fe242371-c493-4a51-8007-dd420af3c4ae",
+          "amenityName": "Amenity 5",
+          "iconUrl": "http://localhost:8080/images/97b0026d-b547-45c0-b943-eddf70cb42ad_stamp.png",
+          "category": "two",
+          "sequence": 3,
+          "isPaid": false,
+          "price": null,
+        "isAvailable":false
       }
   ]
 }
